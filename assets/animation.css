@@ -1,0 +1,16 @@
+span.char{
+    animation: slide-left 0.4s forwards; 
+    /* animation: slide-left 0.4s cubic-bezier(0.3, 0, 0.7, 1) both; */
+    animation-delay: calc(20ms * var(--char-index));
+    opacity: 0;
+}
+@keyframes slide-left {
+    from{
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
